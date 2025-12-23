@@ -19,10 +19,10 @@ app.use(
       if (!origin) {
         return callback(null, true);
       }
-      
+
       console.log('CORS Request from origin:', origin);
       console.log('Allowed origins:', allowedOrigins);
-      
+
       if (allowedOrigins.includes(origin)) {
         callback(null, true);
       } else {
