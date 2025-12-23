@@ -16,6 +16,16 @@ This project demonstrates a minimal yet production-grade implementation of an AI
 - 🚀 Deployed on Render (backend) and Vercel (frontend)
 - 🔒 Production-grade CORS and error handling
 
+## Architecture
+
+![Architecture Diagram](https://github.com/ashutoshpandey18/AI-Live-Chat-Agent/blob/master/architecture.png?raw=true)
+
+The application follows a three-tier architecture:
+- **Frontend Layer**: React components (ChatWindow, ChatInput, ChatMessage) communicate with the backend via REST API
+- **Backend Layer**: Express server with Chat Service orchestrating business logic, LLM Service for AI integration, and Chat Repository for database operations
+- **Data Layer**: SQLite database with Conversations and Messages tables for persistent storage
+- **External Service**: OpenRouter API for LLM-powered responses
+
 ## Tech Stack
 
 **Backend:**
